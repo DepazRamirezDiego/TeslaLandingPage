@@ -1,5 +1,5 @@
 ---
-import ChargeSection from '../components/ChargeSection.astro'
+import ChargeSection from '../components/Model-Y.astro'
 import HeroSection from '../components/HeroSection.astro'
 import LandingHeader from '../components/LandingHeader.astro'
 import Model3 from '../components/Model-3.astro'
@@ -8,12 +8,13 @@ import ModelX from '../components/Model-X.astro'
 import Powerwall from '../components/Powerwall.astro'
 import Accessories from '../components/Accessories.astro'
 import Layout from '../layouts/Layout.astro'
+import ModelY from '../components/Model-Y.astro'
 ---
 
 
 <Layout title="Tesla - El coche de tus sueños.">
 	<LandingHeader/>
-	<main class="snap-y snap-mandatory relative w-full h-screen overflow-auto">
+	<main class="snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth">
 		<div class="snap-center">
 			<HeroSection/>
 		</div>
@@ -27,7 +28,7 @@ import Layout from '../layouts/Layout.astro'
 			<ModelX/>
 		</div>
 		<div class="snap-center">
-			<ChargeSection/>
+			<ModelY/>
 		</div>
 		<div class="snap-center">
 			<Powerwall/>
